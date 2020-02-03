@@ -23,7 +23,7 @@
                     <h5>Welcome</h5>
                     <h1>RUN<span>Consult</span></h1>
                     <h3>Sign in to start your session</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p></p>
                 </div>
 			</div>
 			<div class="col-lg-4 col-md-12 col-sm-12">
@@ -54,16 +54,16 @@
                             </div>
                         </div>
                         <div>
-                            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-cyan" {{ old('remember') ? 'checked' : '' }}>
-                            <label for="rememberme">{{ __('Remember Me') }}</label>
+                            {{-- <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-cyan" {{ old('remember') ? 'checked' : '' }}>
+                            <label for="rememberme">{{ __('Remember Me') }}</label> --}}
                         </div>
                         
                         <input type="submit" class="btn btn-raised waves-effect bg-red" value="SIGN IN">
-                        @if (Route::has('password.request'))
+                        {{-- @if (Route::has('password.request'))
                             <div class="text-left">
                                 <a href="{{ route('password.request') }}">{{ __('Forgot Password?') }}</a>
                             </div>
-                        @endif
+                        @endif --}}
 
                     </form>
 				</div>

@@ -44,7 +44,7 @@ Route::get('/product-prices/{category}/delete', 'ProductPriceControllers@destroy
 
 // Sales Routes
 Route::get('/sales', 'SaleController@index');
-
+Route::get('/credit', 'SaleController@creditSales');
 
 // Make Sale Routes
 Route::get('/make-sale', 'MakeSaleController@index');
@@ -57,7 +57,7 @@ Auth::routes();
 
 // Temp Auth Routes
 Route::post('/login2', 'AuthController@login');
-Route::post('/logout', 'AuthController@logout');
+Route::get('/logout', 'AuthController@logout');
 
 // Route::get('/units', 'UnitController@index');
 Route::get('/home', 'HomeController@index')->name('home');
@@ -66,16 +66,11 @@ Route::get('/login2', function () {
     return view('auth/login2');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin/dashboard');
-});
+
+Route::get('/dashboard', 'PagesController@dashboard');
 
 Route::get('/layout', function () {
     return view('layouts/admin');
-});
-
-Route::get('/credit', function () {
-    return view('admin/credit-sales');
 });
 
 Route::get('/units', function () {

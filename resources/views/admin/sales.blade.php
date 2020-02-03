@@ -6,7 +6,7 @@
       <div class="col-lg-12 col-md-6 col-sm-7">
           <h2>Admin Panel</h2>
           <ul class="breadcrumb">                        
-            <li class="breadcrumb-item"><a href="index.html">Sales</a></li>
+            <li class="breadcrumb-item"><a href="">Sales</a></li>
           </ul>
       </div>
   </div>
@@ -35,6 +35,7 @@
                           <th>Price</th>
                           <th>Customer</th>
                           <th>Made by</th>
+                          <th>Sale Type</th>
                           <th>Date/Time</th>
                       </tr>
                   </thead>
@@ -45,50 +46,26 @@
                           <th>Price</th>
                           <th>Customer</th>
                           <th>Made by</th>
+                          <th>Sale Type</th>
                           <th>Date/Time</th>
                       </tr>
                   </tfoot>
                   <tbody>
-                      <tr>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>Mama rabiu</td>
-                          <td>Janeth</td>
-                          <td>2011/04/25 12:23:08</td>
-                      </tr>
-                      <tr>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>Mama rabiu</td>
-                          <td>Janeth</td>
-                          <td>2011/04/25 12:23:08</td>
-                      </tr>
-                      <tr>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>Mama rabiu</td>
-                          <td>Janeth</td>
-                          <td>2011/04/25 12:23:08</td>
-                      </tr>
-                      <tr>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>Mama rabiu</td>
-                          <td>Janeth</td>
-                          <td>2011/04/25 12:23:08</td>
-                      </tr>
-                      <tr>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>Mama rabiu</td>
-                          <td>Janeth</td>
-                          <td>2011/04/25 12:23:08</td>
-                      </tr>
+                    @if (count($sales) > 0)
+                        @foreach ($sales as $sale)
+                        <tr>
+                            <td>{{ $sale->productName }} ({{ $sale->customerType }})</td>
+                            <td>{{ $sale->quantity }}</td>
+                            <td>{{ $sale->quantity * $sale->productPrice }}</td>
+                            <td>{{ $sale->customerName }}</td>
+                            <td>{{ $sale->userFirstName }} {{ $sale->userLastName }}</td>
+                            <td>{{ $sale->saleType }}</td>
+                            <td>{{ $sale->saleTime }}</td>
+                        </tr>                     
+                        @endforeach
+                    @else
+                       No sale recorded! 
+                    @endif
                   </tbody>
               </table>
           </div>

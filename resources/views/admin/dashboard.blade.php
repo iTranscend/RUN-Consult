@@ -21,7 +21,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Sales</span>
-                                <span class="value">1,305</span>
+                                <span class="value">{{ $totalNumberOfSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -57,7 +57,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Credit Sales</span>
-                                <span class="value">21</span>
+                                <span class="value">{{ $numberOfCreditSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 18%
@@ -95,7 +95,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Bakery Sales</span>
-                                <span class="value">1,305</span>
+                                <span class="value">{{ $totalBakerySales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -131,7 +131,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Bakery Credit Sales</span>
-                                <span class="value">21</span>
+                                <span class="value">{{ $numberOfBakeryCreditSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 18%
@@ -169,7 +169,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Water Factory Sales</span>
-                                <span class="value">1,305</span>
+                                <span class="value">{{ $totalWaterSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -205,7 +205,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Water Factory Credit Sales</span>
-                                <span class="value">21</span>
+                                <span class="value">{{ $numberOfWaterCreditSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 18%
@@ -243,7 +243,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Laundry Sales</span>
-                                <span class="value">1,305</span>
+                                <span class="value">{{ $totalLaundrySales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -279,7 +279,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Laundry Credit Sales</span>
-                                <span class="value">21</span>
+                                <span class="value">{{ $numberOfLaundryCreditSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 18%

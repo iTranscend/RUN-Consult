@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<title>:: Dashboard ::</title>
+<title>:: Sale Portal ::</title>
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -117,7 +117,6 @@
                                 </a> </li>
                         </ul>
                     </li>
-                    <li class="footer"> <a href="javascript:void(0);">View All Notifications</a> </li>
                 </ul>
             </li>
             <li><a href="/logout" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
@@ -142,14 +141,7 @@
     <div class="menu">
         <ul class="list">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="open"> <a href="javascript:void(0);" class="menu-toggle"><i class="material-icons">layers</i><span>Manage Products</span> </a>
-                <ul class="ml-menu">
-                    <li> <a href="/product-categories">Product Categories</a></li>
-                    <li> <a href="/products">Products</a></li>
-                    <li> <a href="/product-prices">Product Prices</a></li>
-                </ul>
-            </li>
-            <li> <a href="/reports"><i class="zmdi zmdi-logout"></i><span>Logout</span> </a> </li>
+            <li> <a href="/logout"><i class="zmdi zmdi-logout"></i><span>Logout</span> </a> </li>
         </ul>
     </div>
     <!-- #Menu --> 
@@ -332,7 +324,7 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="body">
-                        <p class="copy m-b-0">© Copyright <time class="year">2017</time> <a href="https://www.linkedin.com/in/oluwafemi-bankole-811027153/" target="_blank">Femi Bankole</a> - All Rights Reserved</p>
+                        <p class="copy m-b-0">© Copyright <time class="year">2020</time> <a href="https://www.linkedin.com/in/oluwafemi-bankole-811027153/" target="_blank">Femi Bankole</a> - All Rights Reserved</p>
                     </div>
                 </div>
             </div>

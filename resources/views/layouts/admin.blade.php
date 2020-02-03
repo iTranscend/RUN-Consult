@@ -118,7 +118,7 @@
                     <li class="footer"> <a href="javascript:void(0);">View All Notifications</a> </li>
                 </ul>
             </li>
-            <li><a href="login2" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
+            <li><a href="/logout" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
             <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
         </ul>
     </div>
@@ -221,7 +221,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="body">
-                        <p class="copy m-b-0">© Copyright <time class="year">2017</time> <a href="https://www.linkedin.com/in/oluwafemi-bankole-811027153/" target="_blank">Femi Bankole</a> - All Rights Reserved</p>
+                        <p class="copy m-b-0">© Copyright <time class="year">2020</time> <a href="https://www.linkedin.com/in/oluwafemi-bankole-811027153/" target="_blank">Femi Bankole</a> - All Rights Reserved</p>
                     </div>
                 </div>
             </div>

@@ -51,33 +51,21 @@
                       </tr>
                   </tfoot>
                     <tbody>
-                        <tr>
-                          <td>Mama rabiu</td>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>2011/04/25 12:23:08</td>
-                          <td>Janeth</td>
-                          <td><button type="button" class="btn btn-xs btn-raised bg-lime waves-effect" onclick="confirm('Are You sure this item has been paid for?');"> <i class="material-icons">done</i> </button></td>
-                        </tr>
-                        <tr>
-                          <td>Mama rabiu</td>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>2011/04/25 12:23:08</td>
-                          <td>Janeth</td>
-                          <td><button type="button" class="btn btn-xs btn-raised bg-lime waves-effect" onclick="confirm('Are You sure this item has been paid for?');"> <i class="material-icons">done</i> </button></td>
-                        </tr>
-                        <tr>
-                          <td>Mama rabiu</td>
-                          <td>Big Loaf</td>
-                          <td>50</td>
-                          <td>323450</td>
-                          <td>2011/04/25 12:23:08</td>
-                          <td>Janeth</td>
-                          <td><button type="button" class="btn btn-xs btn-raised bg-lime waves-effect" onclick="confirm('Are You sure this item has been paid for?');"><i class="material-icons">done</i></button></td>
-                        </tr>
+                      @if (count($creditSales) > 0)
+                          @foreach ($creditSales as $sale)
+                          <tr>
+                            <td>{{ $sale->customerName }}</td>
+                              <td>{{ $sale->productName }} ({{ $sale->customerType }})</td>
+                              <td>{{ $sale->quantity }}</td>
+                              <td>{{ $sale->quantity * $sale->productPrice }}</td>
+                              <td>{{ $sale->userFirstName }} {{ $sale->userLastName }}</td>
+                              <td>{{ $sale->saleTime }}</td>
+                              <td><button type="button" class="btn btn-xs btn-raised bg-lime waves-effect" onclick="confirm('Are You sure this item has been paid for?');"> <i class="material-icons">done</i> </button></td>
+                          </tr>                     
+                          @endforeach
+                      @else
+                        No sale made on credit
+                      @endif
                     </tbody>
                 </table>
             </div>
