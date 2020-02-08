@@ -34,8 +34,8 @@
                           <th>Product</th>
                           <th>Quantity</th>
                           <th>Price</th>
-                          <th>Date</th>
                           <th>Referee (Employee/Driver)</th>
+                          <th>Date</th>
                           <th>Credit Paid Off?</th>
                         </tr>
                     </thead>
@@ -45,8 +45,8 @@
                         <th>Product</th>
                         <th>Quantity</th>
                         <th>Price</th>
-                        <th>Date</th>
                         <th>Referee (Employee/Driver)</th>
+                        <th>Date</th>
                         <th>Credit Paid Off?</th>
                       </tr>
                   </tfoot>
