@@ -18,8 +18,9 @@ class MakeSaleController extends Controller
      */
     public function index()
     {
+        $unit_id = session('unit_id');
         $customers = Customer::where('deleted', false)->get();
-        $products = DB::select('SELECT prodprice.id AS productPriceID, prodprice.price AS productPrice, prod.name AS productName, ctype.name AS customerType FROM products prod JOIN products_prices prodprice ON prod.id = prodprice.product_id JOIN customer_type ctype ON prodprice.customer_type_id = ctype.id');
+        $products = DB::select("SELECT prodprice.id AS productPriceID, prodprice.price AS productPrice, prod.name AS productName, ctype.name AS customerType FROM products prod JOIN products_prices prodprice ON prod.id = prodprice.product_id JOIN customer_type ctype ON prodprice.customer_type_id = ctype.id JOIN product_categories ON product_categories.id = prod.product_category_id WHERE product_categories.unit_id = '$unit_id'");
 
         Cart::session('user');
         
