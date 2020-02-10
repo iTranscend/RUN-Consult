@@ -133,7 +133,7 @@
                                 </div>
                                 <p class="text-muted">{{$user->phone}}</p>                           
                                 <p class="text-muted">{{$user->email}}</p>                     
-                                <a href="/users/{{$user->id}}" class="btn btn-raised btn-primary waves-effect">View Profile</a>                      
+                                {{-- <a href="/users/{{$user->id}}" class="btn btn-raised btn-primary waves-effect">View Profile</a>                       --}}
                             </div>
                         </div>
                     </div>
