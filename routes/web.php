@@ -45,6 +45,7 @@ Route::get('/product-prices/{category}/delete', 'ProductPriceControllers@destroy
 // Sales Routes
 Route::get('/sales', 'SaleController@index');
 Route::get('/credit', 'SaleController@creditSales');
+Route::get('/credit/{id}/verify', 'SaleController@verifyCreditSale');
 
 // Make Sale Routes
 Route::get('/make-sale', 'MakeSaleController@index');
