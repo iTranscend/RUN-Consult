@@ -60,7 +60,7 @@
                               <td>{{ $sale->quantity * $sale->productPrice }}</td>
                               <td>{{ $sale->userFirstName }} {{ $sale->userLastName }}</td>
                               <td>{{ $sale->saleTime }}</td>
-                              <td><button type="button" class="btn btn-xs btn-raised bg-lime waves-effect" onclick="confirm('Are You sure this item has been paid for?');"> <i class="material-icons">done</i> </button></td>
+                              <td><a href="/credit/{{ $sale->saleID }}/verify" class="btn btn-xs btn-raised bg-lime waves-effect" onclick="confirm('Are You sure this item has been paid for?');"> <i class="material-icons">done</i></a></td>
                           </tr>                     
                           @endforeach
                       @else
