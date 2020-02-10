@@ -39,7 +39,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Revenue</span>
-                                <span class="value">&#8358;63.23M</span>
+                                <span class="value">&#8358;200,340</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 21%
@@ -75,7 +75,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Current Credit Amount</span>
-                                <span class="value">&#8358;40,480</span>
+                                <span class="value">&#8358;4,950</span>
                             </div>
                         </div>
                         <p class="media-footer text-danger"><i class="zmdi zmdi-trending-down"></i> 12%
@@ -95,7 +95,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Bakery Sales</span>
-                                <span class="value">{{ $totalBakerySales }}</span>
+                                <span class="value">{{ $numberOfBakerySales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -113,7 +113,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Bakery  Revenue</span>
-                                <span class="value">&#8358;63.23M</span>
+                                <span class="value">&#8358;200,340</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 21%
@@ -149,7 +149,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Bakery Credit Amount</span>
-                                <span class="value">&#8358;40,480</span>
+                                <span class="value">&#8358;4,950</span>
                             </div>
                         </div>
                         <p class="media-footer text-danger"><i class="zmdi zmdi-trending-down"></i> 12%
@@ -169,7 +169,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Water Factory Sales</span>
-                                <span class="value">{{ $totalWaterSales }}</span>
+                                <span class="value">{{ $numberOfWaterSales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -187,7 +187,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Water Factory Revenue</span>
-                                <span class="value">&#8358;63.23M</span>
+                                <span class="value">&#8358;0</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 21%
@@ -223,7 +223,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Water Factory Credit Amount</span>
-                                <span class="value">&#8358;40,480</span>
+                                <span class="value">&#8358;0</span>
                             </div>
                         </div>
                         <p class="media-footer text-danger"><i class="zmdi zmdi-trending-down"></i> 12%
@@ -243,7 +243,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Laundry Sales</span>
-                                <span class="value">{{ $totalLaundrySales }}</span>
+                                <span class="value">{{ $numberOfLaundrySales }}</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 13%
@@ -261,7 +261,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Laundry Revenue</span>
-                                <span class="value">&#8358;63.23M</span>
+                                <span class="value">&#8358;0</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 21%
@@ -297,7 +297,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Laundry Credit Amount</span>
-                                <span class="value">&#8358;40,480</span>
+                                <span class="value">&#8358;0</span>
                             </div>
                         </div>
                         <p class="media-footer text-danger"><i class="zmdi zmdi-trending-down"></i> 12%
@@ -311,8 +311,8 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card top-report">
                     <div class="body">
-                        <h3 class="m-t-0">&#8358;70,250</h3>
-                        <p class="text-muted">Water Factory sales this Month</p>
+                        <h3 class="m-t-0">&#8358;0</h3>
+                        <p class="text-muted">Water Factory Sales this Month</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
                         </div>
@@ -323,8 +323,8 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card top-report">
                     <div class="body">
-                        <h3 class="m-t-0">&#8358;100,250</h3>
-                        <p class="text-muted">Bakery Sales this month</p>
+                        <h3 class="m-t-0">&#8358;56,889</h3>
+                        <p class="text-muted">Bakery Sales this Month</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width:32%;"></div>
                         </div>
@@ -335,7 +335,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card top-report">
                     <div class="body">
-                        <h3 class="m-t-0">&#8358;40,250</h3>
+                        <h3 class="m-t-0">&#8358;0</h3>
                         <p class="text-muted">Laundry Sales this Month</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
@@ -384,15 +384,30 @@
                                 </tr>
                             </thead>
                             <tbody class="no-border-x">
-                                <tr>
-                                    <td>Sony Xperia M4</td>
-                                    <td class="number">14</td>
-                                    <td class="number">&#8358;149</td>
-                                    <td>Aug 23, 2016</td>
-                                    
-                                    <td class="text-danger">Yes</td>
-                                </tr>
-                                
+                                @if (count($sales) > 0)
+                                    @foreach ($sales as $sale)
+                                    <tr>
+                                        <td>{{ $sale->productName }} ({{ $sale->customerType }})</td>
+                                        <td>{{ $sale->quantity }}</td>
+                                        <td>&#8358;{{ $sale->quantity * $sale->productPrice }}</td>
+                                        {{-- <td>{{ $sale->customerName }}</td> --}}
+                                        {{-- <td>{{ $sale->userFirstName }} {{ $sale->userLastName }}</td> --}}
+                                        {{-- <td>{{ $sale->saleType }}</td> --}}
+                                        <td>{{ $sale->saleTime }}</td>
+                                        <td class="text-warning">
+                                            <?php 
+                                                if ($sale->isCredit == true) {
+                                                    echo 'Yes';
+                                                } else {
+                                                    echo 'No';
+                                                }
+                                            ?>
+                                        </td>
+                                    </tr>                     
+                                    @endforeach
+                                @else
+                                No sale recorded! 
+                                @endif
                             </tbody>
                         </table>
                     </div>
