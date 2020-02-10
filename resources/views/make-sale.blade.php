@@ -57,9 +57,18 @@
             <a class="navbar-brand" href="index.html">RUN-Consult</a>
         </div>
         <ul class="nav navbar-nav navbar-right">        
-            <li style="color:white;">{{ session('unit_id') }}</li> 
-            <li style="color:white;">{{ session('user') }}</li>
-            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" ><i class="zmdi zmdi-notifications"></i>
+            <li style="color:white;">
+                <?php 
+                    if (session('unit_id') == 1) {
+                        echo 'Bakery';
+                    } else if (session('unit_id') == 2) {
+                        echo 'Water Factory';
+                    } else if (session('unit_id') == 3) {
+                        echo 'Laundry';
+                    }
+                ?>
+            </li> 
+            {{-- <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" ><i class="zmdi zmdi-notifications"></i>
                 <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
                 </a>
                 <ul class="dropdown-menu">
@@ -118,7 +127,7 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
             <li><a href="/logout" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
             <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
         </ul>
@@ -141,7 +150,7 @@
     <div class="menu">
         <ul class="list">
             <li class="header">MAIN NAVIGATION</li>
-            <li> <a href="/logout"><i class="zmdi zmdi-logout"></i><span>Logout</span> </a> </li>
+            <li> <a href="/logout"><i class="zmdi zmdi-power"></i><span>Logout</span> </a> </li>
         </ul>
     </div>
     <!-- #Menu --> 
@@ -157,10 +166,10 @@
             <div class="right_menu">
                 <ul class="choose-skin">
                     <h6>Flat Color</h6>
-                    <li data-theme="red"  class="active">
+                    <li data-theme="red">
                         <div class="red"></div>
                         <span>Red</span> </li>
-                    <li data-theme="purple">
+                    <li data-theme="purple" class="active">
                         <div class="purple"></div>
                         <span>Purple</span> </li>
                     <li data-theme="deep-purple">
