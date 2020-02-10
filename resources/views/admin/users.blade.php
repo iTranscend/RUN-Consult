@@ -129,7 +129,28 @@
                                 </div>
                                 <div class="">
                                     <h4 class="m-b-5">{{$user->firstname}} {{$user->lastname}}</h4>
-                                    <p class="text-muted">{{$user->role_id}}....<span class="text-successs">{{$user->unit_id}}</span></p>
+                                    <p class="text-warning">
+                                        <?php 
+                                            if ($user->role_id == 1) {
+                                                echo 'Admin';
+                                            } else if ($user->role_id == 2) {
+                                                echo 'Operator';
+                                            } else if ($user->role_id == 3) {
+                                                echo 'Driver';
+                                            }
+                                        ?>
+                                        ....
+                                        <span class="text-success">
+                                            <?php 
+                                                if ($user->unit_id == 1) {
+                                                    echo 'Bakery';
+                                                } else if ($user->unit_id == 2) {
+                                                    echo 'Water Factory';
+                                                } else if ($user->unit_id == 3) {
+                                                    echo 'Laundry';
+                                                }
+                                            ?>
+                                        </span></p>
                                 </div>
                                 <p class="text-muted">{{$user->phone}}</p>                           
                                 <p class="text-muted">{{$user->email}}</p>                     
