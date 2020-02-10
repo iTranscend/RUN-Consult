@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class SaleController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of all normal sales.
      *
      * @return \Illuminate\Http\Response
      */
@@ -39,6 +39,18 @@ class SaleController extends Controller
         WHERE sales.is_credit = 1');
 
         return view('admin.credit-sales')->with('creditSales', $creditSales);
+    }
+
+    /**
+     * Verify that a sale made on credit has been paid for
+     * 
+     */
+    public function verifyCreditSale($id) {
+        $sale = Sale::find($id);
+        $sale->is_credit = !$sale->is_credit;
+        $sale->save();
+
+        return redirect('/credit');
     }
 
     /**
