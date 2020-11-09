@@ -67,7 +67,7 @@ Route::get('/login2', function () {
     return view('auth/login2');
 });
 
-
+// PagesController Routes
 Route::get('/dashboard', 'PagesController@dashboard');
 
 Route::get('/layout', function () {
