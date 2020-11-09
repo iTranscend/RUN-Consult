@@ -57,7 +57,7 @@
             <a class="navbar-brand" href="index.html">RUN-Consult</a>
         </div>
         <ul class="nav navbar-nav navbar-right">          
-            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" ><i class="zmdi zmdi-notifications"></i>
+            {{-- <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" ><i class="zmdi zmdi-notifications"></i>
                 <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
                 </a>
                 <ul class="dropdown-menu">
@@ -117,7 +117,7 @@
                     </li>
                     <li class="footer"> <a href="javascript:void(0);">View All Notifications</a> </li>
                 </ul>
-            </li>
+            </li> --}}
             <li><a href="/logout" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
             <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
         </ul>

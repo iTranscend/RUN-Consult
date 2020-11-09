@@ -39,7 +39,7 @@
                             </div>
                             <div class="media-text">
                                 <span class="title">Total Revenue</span>
-                                <span class="value">&#8358;200,340</span>
+                                <span class="value">&#8358;364,565</span>
                             </div>
                         </div>
                         <p class="media-footer text-success"><i class="zmdi zmdi-trending-up"></i> 21%
